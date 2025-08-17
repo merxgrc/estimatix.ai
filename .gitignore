@@ -1,1 +1,33 @@
- 
+ cat > .gitignore << 'EOF'
+# deps
+node_modules/
+.pnpm-store/
+
+# builds & caches
+.next/
+out/
+.turbo/
+
+# env
+.env
+.env.*
+*.env.local
+apps/*/.env*
+packages/*/.env*
+
+# logs
+*.log
+logs/
+
+# os/editor
+.DS_Store
+.idea/
+.vscode/
+
+# vercel & coverage
+.vercel/
+coverage/
+EOF
+
+# TypeScript build cache
+*.tsbuildinfo

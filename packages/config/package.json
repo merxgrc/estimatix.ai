@@ -1,0 +1,6 @@
+{
+  "name": "@estimatix/config",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./tailwind-preset.js"
+} 
